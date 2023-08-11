@@ -13,7 +13,8 @@
   },
   "license": "ISC",
   "workspaces": [
-    "packages/*"
+    "packages/auth",
+    "packages/container"
   ],
   "devDependencies": {
     "concurrently": "^8.2.0",
