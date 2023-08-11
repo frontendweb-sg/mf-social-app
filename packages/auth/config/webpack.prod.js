@@ -3,12 +3,12 @@ const { merge } = require("webpack-merge");
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
 const pkg = require("../package.json")
 
+const domain = process.env.VERCEL_URL;
 /** @type {import("webpack").Configuration} */
 const config = {
     mode: "production",
     output: {
-        filename: "[name].[hash].[ext]",
-        publicPath: "/auth/latest"
+        filename: "[name].[contenthash].js",
     },
     plugins: [
         new ModuleFederationPlugin({

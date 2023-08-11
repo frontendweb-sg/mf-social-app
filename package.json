@@ -1,13 +1,16 @@
 {
-  "name": "social-app",
+  "name": "mf-social-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "private": true,
   "scripts": {
     "start": "concurrently \"wsrun --parallel start\""
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "frontendend web"
+  },
   "license": "ISC",
   "workspaces": [
     "packages/*"

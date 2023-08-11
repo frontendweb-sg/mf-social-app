@@ -17,6 +17,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+      - name: install production dependencies for container
+        run: npm install
+      - name: create production build for container
+        run: npm run build
       - name: Install Vercel CLI
         run: npm install --global vercel@latest
       - name: Pull Vercel Environment Information
