@@ -19,6 +19,11 @@
       "@/*": ["src/*"]
     }
   },
-  "include": ["src", "**.d.ts"],
+  "include": [
+    "src",
+    "**.d.ts",
+    "../container/src/layout/Appbar.tsx",
+    "../container/src/layout/Footer.tsx"
+  ],
   "exclude": ["node_modules"]
 }
